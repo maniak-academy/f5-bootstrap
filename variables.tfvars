@@ -1,3 +1,3 @@
 bigipmgmt = "192.168.86.46"
-bigipmgmtuser = "root"
+bigipmgmtuser = "admin"
 bigippass = "W3lcome098!"

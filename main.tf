@@ -23,7 +23,7 @@ provider "bigip" {
 
 resource "null_resource" "install_do" {
   provisioner "local-exec" {
-    command = "./install-do-rpm.sh ${var.bigipmgmt} ${var.bigipmgmtuser}:${var.bigippass}"
+    command = "./install-do-rpm.sh 192.168.86.46 admin:W3lcome098!"
   }
 }
 
@@ -34,6 +34,6 @@ resource "time_sleep" "wait_30_seconds" {
 
 resource "null_resource" "install_as3" {
   provisioner "local-exec" {
-    command = "./install-as3-rpm.sh ${var.bigipmgmt} ${var.bigipmgmtuser}:${var.bigippass}"
+    command = "./install-as3-rpm.sh 192.168.86.46 admin:W3lcome098!"
   }
 }
